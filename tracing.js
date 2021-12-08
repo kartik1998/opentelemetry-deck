@@ -1,10 +1,11 @@
 const opentelemetry = require('@opentelemetry/sdk-node');
 const { ZipkinExporter } = require('@opentelemetry/exporter-zipkin');
+const { SimpleSpanProcessor } = require('@opentelemetry/tracing');
 const { getNodeAutoInstrumentations } = require('@opentelemetry/auto-instrumentations-node');
 
 const sdk = new opentelemetry.NodeSDK({
   traceExporter: new ZipkinExporter({
-    serviceName: 'telemetry-deck'
+    serviceName: 'telemetry-deck',
   }),
   instrumentations: [getNodeAutoInstrumentations()],
 });
