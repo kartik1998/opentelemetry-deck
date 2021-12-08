@@ -1,0 +1,25 @@
+{
+  "name": "opentelemetry-deck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kartik",
+  "license": "WTFPL",
+  "dependencies": {
+    "@opentelemetry/api": "^1.0.3",
+    "@opentelemetry/auto-instrumentations-node": "^0.27.0",
+    "@opentelemetry/core": "^1.0.1",
+    "@opentelemetry/exporter-zipkin": "^1.0.1",
+    "@opentelemetry/node": "^0.24.0",
+    "@opentelemetry/plugin-express": "^0.15.0",
+    "@opentelemetry/plugin-http": "^0.18.2",
+    "@opentelemetry/plugin-https": "^0.18.2",
+    "@opentelemetry/sdk-node": "^0.27.0",
+    "@opentelemetry/tracing": "^0.24.0",
+    "express": "^4.17.1"
+  }
+}
